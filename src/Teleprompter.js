@@ -2,6 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import stringSimilarity from 'string-similarity'
 
+//TODO
+// REMOVING SIDE EFFECTS
+// REMOVING SHARED STATES
 const StyledTeleprompter = styled.div`
   font-size: 5.25rem;
   width: 100%;
@@ -11,7 +14,7 @@ const StyledTeleprompter = styled.div`
   display: block;
   margin-bottom: 1rem;
   background: transparent no-repeat;
-  background-image: radial-gradient(
+  background-image: radial-gradient(//
       farthest-side at 50% 0,
       rgba(0, 0, 0, 0.1),
       rgba(0, 0, 0, 0)
@@ -137,6 +140,7 @@ export default function Teleprompter({
   }, [progress])
 
   return (
+// FUNCTIONAL PROGRAMING 
     <React.Fragment>
       <StyledTeleprompter
         ref={scrollRef}
