@@ -17,5 +17,6 @@ describe('Teleprompter',()=>{
   it('Homepage Found',()=>{
     const appWrapper = shallow(<App/>);
     appWrapper.find(Home)
+    expect(Home).toHaveLength(0);
   })
 })
