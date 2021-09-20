@@ -9,10 +9,12 @@ import React, {
     Buttons,
     Input,
     Button
-  } from './styles'
+  } from '../styles'
   
   const INITIAL_TEXT = `This is a test to see how things work. This should scroll as you approach the next word. If all goes well you can talk and it will move along.`
   
+  // FUNCTIONAL COMPONENT
+
   export default function App() {
     const [
       listening,

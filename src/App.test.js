@@ -1,8 +1,21 @@
-import { render, screen } from '@testing-library/react';
+import { shallow } from 'enzyme';
 import App from './App';
+import Teleprompter from './Teleprompter';
+import Home from './Pages/Home';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+describe('Teleprompter',()=>{
+
+  it('renders without crashing', ()=>{
+    const appWrapper = shallow(<App/>)
+  })
+
+  it('Telepromter Found',()=>{
+    const appWrapper = shallow(<App/>);
+    appWrapper.find(Teleprompter)
+  })
+
+  it('Homepage Found',()=>{
+    const appWrapper = shallow(<App/>);
+    appWrapper.find(Home)
+  })
+})
