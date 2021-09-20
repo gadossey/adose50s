@@ -20,6 +20,7 @@
     "web-vitals": "^1.0.1"
   },
   "devDependencies": {
+    "riteway": "^6.3.1",
     "typescript": "3.8.3"
   },
   "scripts": {

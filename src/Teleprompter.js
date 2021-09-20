@@ -5,6 +5,8 @@ import stringSimilarity from 'string-similarity'
 //TODO
 // REMOVING SIDE EFFECTS
 // REMOVING SHARED STATES
+// FUNCTIONAL PROGRAMMING 
+
 const StyledTeleprompter = styled.div`
   font-size: 5.25rem;
   width: 100%;
@@ -140,11 +142,11 @@ export default function Teleprompter({
   }, [progress])
 
   return (
-// FUNCTIONAL PROGRAMING 
     <React.Fragment>
       <StyledTeleprompter
         ref={scrollRef}
       >
+      
         {words.map((word, i) => (
           <span
             key={`${word}:${i}`}
